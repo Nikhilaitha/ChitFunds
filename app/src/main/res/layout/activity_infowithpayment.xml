@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eeka"
+    tools:context=".home.homepage.Infowithpayment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Amount"
+        android:paddingLeft="25dp"
+        android:background="@drawable/edit_round"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/amount_et"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="UPI ID"
+        android:background="@drawable/textview_round"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="25dp"
+        android:textSize="20sp"
+        android:id="@+id/upi_id"
+        android:layout_below="@+id/amount_et"
+        android:text="7287960144@paytm"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_round"
+        android:hint="Your Name"
+        android:paddingLeft="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/name"
+        android:layout_below="@+id/upi_id" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_round"
+        android:hint="Note"
+        android:paddingLeft="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/note"
+        android:layout_below="@+id/name"
+        android:text="Paying for Chit Fund's"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_round"
+        android:textColor="#fff"
+        android:id="@+id/send"
+        android:layout_below="@+id/note"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="send by upi"/>
+
+
+</RelativeLayout>
